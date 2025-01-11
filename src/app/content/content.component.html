@@ -29,8 +29,12 @@
                     <div class="itemImage">
                         <div class="position-relative">
                             <img [src]="item.display_img_url" alt="">
-                            <span [ngClass]="item.quantity === 0 ? 'outOfStock' : ''">
+                            <span *ngIf="item.quantity === 0" [ngClass]="item.quantity === 0 ? 'outOfStock' : ''">
                                 {{item.quantity === 0 ? '(Out Of Stock)' : ''}}
+                            </span>
+                            <span *ngIf="item.quantity !== 0" class="d-grid" [ngClass]="item.low_quantity !== 0 ? 'outOfStock' : ''">
+                                <span class="text-warning">High On Demand</span>
+                                {{item.low_quantity !== 0 ? '(Only ' + item.low_quantity + ' rewards left)' : ''}}
                             </span>
                         </div>
                         <div class="info pb-0">
