@@ -1,0 +1,115 @@
+.contentSection {
+    padding-left: 32px;
+    padding-right: 38px;
+    display: grid;
+    gap: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("../../../public/searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+.informationSection {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.accordianSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sort {
+    border: none;
+    background: red;
+    border-radius: 10px;
+    width: max-content;
+    padding: 5px 20px;
+    color: white;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    .card {
+        .itemImage {
+            .info {
+                display: grid;
+                gap: 15px;
+                padding: 20px;
+            }
+            div {
+                img {
+                    width: 100%;
+                    height: 175px;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            span {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.sortFilter {
+    display: flex;
+    gap: 15px;
+    div {
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid grey;
+    }
+}
+
+.selectedSort {
+    background: red;
+    color: white;
+    border: none;
+}
+
+.filterBy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::ng-deep.modal-dialog {
+    max-width: var(--bs-modal-width);
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100vh;
+}
+
+.modal-body {
+    height: 100vh;
+}
+
+.outOfStock {
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(248 248 248 / 44%);
+    opacity: 1;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

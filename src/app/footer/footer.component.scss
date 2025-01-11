@@ -1,0 +1,9 @@
+.footerSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.footerSection{
+    padding-bottom: 20px;
+}
