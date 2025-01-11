@@ -25,12 +25,24 @@
     align-items: center;
     gap: 10px;
 
-    i{
+    i {
         color: #fff;
     }
 
     img {
         width: 75px;
         height: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headerSection {
+        width: 111%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headerSection {
+        width: 111%;
     }
 }

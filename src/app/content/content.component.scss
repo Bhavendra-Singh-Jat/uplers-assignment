@@ -113,3 +113,17 @@ input[type="text"] {
     bottom: 10px;
     left: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .itemSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .informationSection {
+        display: grid;
+        // grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+}
